@@ -41,8 +41,8 @@ void gerar(){
 }
 
 void print_matriz(){
-
-	printf("\e[H\e[2J");
+	system("cls"); //cleans windows terminal
+	//system("clear"); a better option for linux and mac users
 	for (x=0;x<3;x++){
 		for (y=0;y<5;y++){
 			printf("%c", matriz[x][y]);
